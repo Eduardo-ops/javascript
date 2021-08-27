@@ -1,4 +1,4 @@
-  var teste = null
+var teste = null
 console.log(teste)
 
 // Variável com seu valor alterado de null para uma string
