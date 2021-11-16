@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Javascript -->
+    <script src="index.js"></script>
+
+    <title>Eventos - Mouse</title>
+</head>
+
+<body>
+
+    <!-- onclick, é um evento disparado quando o elemento é clicável -->
+    <div onclick="action()" style="background: #ccc; height: 150px; width: 150px;">
+        <h1>onclick</h1>
+    </div>
+
+    <!-- ondblclick, é um evento disparado quando o elemento é clicável na sequência de duas vezes. -->
+    <div ondblclick="action()" style="background: #ccc; height: 150px; width: 150px;">
+        <h1>ondblclick</h1>
+    </div>
+
+    <!-- onmouseup, é um evento disparado quando o elemento logo sai de o pressionar de clique. -->
+    <div onmouseup="action()" style="background: #ccc; height: 150px; width: 150px;">
+        <h1>onmouseup</h1>
+    </div>
+
+    <!-- onmouseover, é um evento disparado quando o cursor do mouse sobrepõe ao elemento. -->
+    <div onmouseover="action()" style="background: #ccc; height: 150px; width: 150px;">
+        <h1>onmouseover</h1>
+    </div>
+
+    <!-- onmouseout, é um evento disparado quando o cursor do mouse deixa de sobrepor o elemento. -->
+    <div onmouseout="action()" style="background: #ccc; height: 150px; width: 150px;">
+        <h1>onmouseout</h1>
+    </div>
+
+    <!-- Combinações de eventos em um mesmo elemento. -->
+    <div onclick="test1()" onmouseout="test2()" style="background: #ccc; height: 150px; width: 150px;">
+        <h1>onclick and onmouseout</h1>
+    </div>
+
+</body>
+
+</html>
