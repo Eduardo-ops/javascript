@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Javascript -->
+    <script src="index.js"></script>
+
+    <title>Eventos - Teclado</title>
+</head>
+
+<body>
+
+    <!-- O evento onkeydown ocorre quando o usuário está pressionando uma tecla. -->
+    <label>Teste label</label>
+    <input onkeydown="action()" type="text">
+
+    <!-- O evento onkeyup ocorre quando o usuário lançar uma tecla, a contrário de instantâneo -->
+    <label>Teste label</label>
+    <input onkeyup="action()" type="text">
+
+    <!-- 
+        O evento onkeypress ocorre antes que o usuário finaliza a liberação da tecla, está entre onkeydown
+        e  onkeyup e só é acionado quando a tecla for representado por um caracter. 
+    -->
+    <label>Teste label</label>
+    <input onkeypress="action()" type="text">
+
+</body>
+
+</html>
